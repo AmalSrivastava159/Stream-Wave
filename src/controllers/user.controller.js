@@ -521,11 +521,11 @@ const getWatchHistory = asyncHandler(async(req, res) =>{
     ])
 
     return res
-    .status(200),
+    .status(200)
     .json(
         new ApiResponse(
             200,
-            user[0].getWatchHistory,
+            user[0].WatchHistory,
             "Watch history fetched successfully"
         )
     )
@@ -541,5 +541,6 @@ export {
     updateUserAvater,
     updateUserCoverImage,
     getUserChannelProfile,
-    getWatchHistory
+    getWatchHistory,
+    changeCurrentPassword,
  };
